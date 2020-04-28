@@ -1,0 +1,8 @@
+<h2>List of todos</h2>
+<div>
+  <ul ng-repeat="todo in todos">
+    <todo id="{{todo.id}}" />
+  </ul>
+  <input type="text" placeholder="Hastily create presentation" ng-model="currentTodoDescription" />
+  <button ng-click="addCurrentTodo()">Add todo</button>
+</div>
